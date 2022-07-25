@@ -1,0 +1,5 @@
+#!/bin/bash
+
+TOKEN=`bundle exec ruby jwt_sign.rb '{"text": "message"}'`
+
+node jwt_valid.js $TOKEN
